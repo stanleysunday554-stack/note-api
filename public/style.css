@@ -1,0 +1,55 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 15px;
+}
+
+h1, h2 {
+  color: #243b67;
+}
+
+form, .note {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+input, textarea, select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background: #3159a5;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete {
+  background: #c93636;
+}
+
+small {
+  color: #666;
+}
+
+@media (max-width: 500px) {
+  body {
+    margin: 10px;
+  }
+}
