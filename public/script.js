@@ -40,7 +40,7 @@ async function getNotes() {
 
     // Edit the whole note with PUT
     const editButton = document.createElement("button");
-    editButton.textContent = "Edit All";
+    editButton.textContent   = "Edit All";
 
     editButton.onclick = () => {
       title.value = note.title;
@@ -74,6 +74,7 @@ async function getNotes() {
         body: JSON.stringify({ title: newTitle })
       });
 
+      //read backend response
       const result = await response.json();
 
       if (!response.ok) {

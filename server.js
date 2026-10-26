@@ -11,6 +11,8 @@ app.use(morgan(":method :url :status :date[iso]"));
 // Notes array
 let notes = [];
 
+
+
 // Middleware to check title and content
 function checkNote(req, res, next) {
   const { title, content } = req.body;
@@ -57,7 +59,7 @@ app.post("/notes", checkNote, (req, res) => {
   const now = new Date();
 
   const newNote = {
-    id: Date.now(),
+    id: notes.length + 1,
     title,
     content,
     tags,
